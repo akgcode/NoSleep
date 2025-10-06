@@ -39,7 +39,7 @@ if ("wakeLock" in navigator) {
   wakeButton.disabled = true;
   document.getElementById("awakeText").textContent = "Wake lock is not supported by this browser.";
 }
-
+ 
 btn.addEventListener("click", async () => {
 	if (wakeLock) {
 		await releaseWakeLock();
